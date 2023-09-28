@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="./assets/css/app.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -19,33 +19,76 @@
   </style>
 </head>
 <body>
-
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main>
+    <div class="result">
+      <h2>
+        Your Result
+      </h2>
+      <div class="score">
+        <div>
+          <div class="obtained-score">76</div>
+          <div class="total-score">of 100</div>
+        </div>
+      </div>
+      <div class="result-info">
+        <h3>Great</h3>
+        <p>
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </div>
+      
+    </div>
+    <div class="summary">
+      <h2>Summary</h2>
+      <ul class="test-scores">
+        <li class="reaction">
+          <div class="test">
+            <img src="./assets/images/icon-reaction.svg" alt="Reaction icon"> 
+            <span>Reaction</span>
+          </div>
+          <div class="score">
+            <span class="obtained-score">80 </span> <span class="total-score" >/ 100</span>
+            
+          </div>
+        </li>
+        <li class="memory">
+          <div class="test">
+            <img src="./assets/images/icon-memory.svg" alt="Memory icon"> 
+            <span>Memory</span>
+          </div>
+          <div class="score">
+            <span class="obtained-score">92</span> <span class="total-score" >/ 100</span>
+          </div>
+        </li>
+        <li class="Verbal">
+          <div class="test">
+            <img src="./assets/images/icon-verbal.svg" alt="Verbal icon"> 
+            <span>Verbal</span>
+          </div>
+          <div class="score">
+            <span class="obtained-score">61</span> <span class="total-score" >/ 100</span>
+          </div>
+        </li>
+        <li class="visual">
+          <div class="test">
+            <img src="./assets/images/icon-visual.svg" alt="Visual icon"> 
+            <span>Visual</span>
+          </div>
+          <div class="score">
+            <span class="obtained-score">72</span> <span class="total-score" >/ 100</span>
+          </div>
+        </li>
+      </ul>
+      <button>
+        Continue
+      </button>
+    </div>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Abdul Najeeb Anwari</a>.
+    </div>
+  </footer>
 </body>
 </html>

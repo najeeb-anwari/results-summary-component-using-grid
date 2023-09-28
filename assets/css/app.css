@@ -1,0 +1,171 @@
+/*******************
+*** Global Styles
+*******************/
+:root {
+    /** Primary colors **/
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+
+    /** Gradients **/
+
+    --light-slate-blue-background: hsl(252, 100%, 67%);
+    --light-royal-blue-background: hsl(241, 81%, 54%);
+
+    --violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+    /** Neutral **/
+
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+body {
+    font-family: "Hanken Grotesk";
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-rows: minmax(100vh, 1fr) auto;
+}
+
+body p {
+    font-size: 18px;
+}
+
+main {
+    display: grid;
+    align-self: start;
+}
+
+.result {
+    background: linear-gradient(var(--light-slate-blue-background), var(--light-royal-blue-background));
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    text-align: center;
+    padding: 1.5rem 2.5rem;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.result h2 {
+    color: var(--light-lavender);
+    font-size: 1.2rem;
+}
+
+.result .score {
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(var(--violet-blue-circle), hsla(241, 81%, 54%, .1));
+    justify-self: center;
+    padding: 1rem;
+    display: grid;
+    align-items: center;
+}
+.result .score .obtained-score {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.result .score .total-score {
+    color: hsla(241, 100%, 89%, .5);
+    font-weight: 500;
+}
+
+.result-info h3 {
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: .7rem;
+}
+
+.result-info {
+    color: var(--light-lavender);
+}
+
+.summary {
+    padding: 0 2.5rem;
+    display: grid;
+
+}
+
+.summary h2 {
+    margin: 1.5rem 0;
+}
+
+.summary .test-scores {
+    display: grid;
+    gap: 1rem;
+}
+
+.test-scores li {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.test-scores li.reaction {
+    color: var(--light-red);
+    background-color: hsla(0, 100%, 67%, .1);
+}
+
+.test-scores li.memory {
+    color: var(--orangey-yellow);
+    background-color: hsla(39, 100%, 56%, .1);
+}
+
+.test-scores li.Verbal {
+    color: var(--green-teal);
+    background-color: hsla(166, 100%, 37%, .1);
+}
+
+.test-scores li.visual {
+    color: var(--cobalt-blue);
+    background-color: hsla(234, 85%, 45%, .1);
+}
+
+.test-scores li .score {
+    justify-self: end;
+}
+
+.test-scores li .test {
+    display: grid;
+    grid-template-columns: min-content auto;
+    gap: 10px;
+}
+
+.test-scores .score .obtained-score {
+    color: var(--dark-gray-blue);
+}
+
+.test-scores .score .total-score {
+    color: hsla(224, 30%, 27%, .5);
+}
+
+.summary button {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: var(--dark-gray-blue);
+    color: white;
+    border-radius: 6rem;
+}
