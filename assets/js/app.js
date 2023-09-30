@@ -1,6 +1,6 @@
 
 const testScore = document.querySelector(".test-scores");
-const jsonFilePath = '../../data.json';
+const jsonFilePath = './data.json';
 
 fetch(jsonFilePath)
   .then((response) => {
@@ -15,13 +15,12 @@ fetch(jsonFilePath)
     let obtainedScore = 0;
     jsonData.forEach(element => {
         
-        let testIcon = "../.." + element["icon"].slice(1);
         obtainedScore += element["score"];
         let html = 
         `
         <li class="${`${element["category"]}`.toLowerCase()}">
           <div class="test">
-            <img src="${testIcon}" alt="${element["category"]} icon"> 
+            <img src="${element["icon"]}" alt="${element["category"]} icon"> 
             <span>${element["category"]}</span>
           </div>
           <div class="score">
