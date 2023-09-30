@@ -1,6 +1,6 @@
 
 const testScore = document.querySelector(".test-scores");
-const jsonFilePath = './data.json';
+const jsonFilePath = '../../data.json';
 
 fetch(jsonFilePath)
   .then((response) => {
