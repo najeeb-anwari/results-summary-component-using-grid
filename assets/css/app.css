@@ -133,7 +133,7 @@ main {
     background-color: hsla(39, 100%, 56%, .1);
 }
 
-.test-scores li.Verbal {
+.test-scores li.verbal {
     color: var(--green-teal);
     background-color: hsla(166, 100%, 37%, .1);
 }
