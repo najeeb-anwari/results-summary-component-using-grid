@@ -154,10 +154,12 @@ main {
 
 .test-scores .score .obtained-score {
     color: var(--dark-gray-blue);
+    font-weight: 700;
 }
 
 .test-scores .score .total-score {
     color: hsla(224, 30%, 27%, .5);
+    font-weight: 700;
 }
 
 .summary button {
@@ -168,4 +170,27 @@ main {
     background-color: var(--dark-gray-blue);
     color: white;
     border-radius: 6rem;
+}
+
+@media (min-width: 768px) {
+    body {
+
+    }
+    main {
+        grid-template-columns: 1fr 1fr;
+        align-self: center;
+        max-width: calc(365px * 2);
+        border-radius: 2rem;
+        box-shadow: 0 0 2rem 0 var(--light-lavender);
+    }
+
+    .result {
+        border-radius: 2rem;
+        padding: 1.5rem 3.5rem;
+    }
+    
+    .summary {
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+    }
 }
